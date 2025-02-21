@@ -1,0 +1,28 @@
+.banner {
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.bgHero {
+  background-image: url("/images/banner/hero_image.jpg");
+}
+
+.bgAz {
+  background-image: url("/images/banner/1736852319_Amazon.png");
+}
+
+.title {
+  color: black;
+  background-color: white;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  font-size: 0.85rem;
+}

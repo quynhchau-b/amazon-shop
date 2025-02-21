@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,17 +18,86 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+
+
+.nav-sprite {
+  display: flex;
+  background-image: url(https://m.media-amazon.com/images/G/01/gno/sprites/new-nav-sprite-global-2x_blueheaven-privacy._CB588007131_.png);
+  background-size: 275px;
+  position: relative;
+
+}
+
+.nav-icon.nav-sprite {
+  background-position: -10px -240px;
+  width: 37px !important;
+  height: 27px !important;
+}
+
+.qua::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 2.25rem;
+  inset-inline-end: 0;
+  inset-block-start: 1.25rem;
+  inset-block-end: 0;
+  width: .35rem;
+  border-radius: 3.125rem;
+  height: .35rem;
+  border: 1px solid var(--menu-prime-color);
+  opacity: 1;
+  color: var(--menu-prime-color);
+  font-size: .6rem;
+  font-weight: 600;
+  letter-spacing: .065rem;
+  text-transform: uppercase;
+  padding: .75rem 1.65rem;
+  white-space: nowrap;
+  opacity: .5;
+  position: relative;
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    @apply size-1.5;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-200 rounded-full dark:bg-gray-700;
+  }
+  /* For Remove Date Icon */
+  input[type="date"]::-webkit-inner-spin-button,
+  input[type="time"]::-webkit-inner-spin-button,
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
   }
 }

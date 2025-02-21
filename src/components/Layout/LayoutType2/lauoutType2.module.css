@@ -1,0 +1,67 @@
+.container {
+  overflow-x: hidden;
+  min-height: 100vh;
+  max-width: 1170px;
+  width: 100%;
+}
+
+.header {
+  background: #0c3243;
+  padding: 8px;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerRight {
+  height: 27px !important;
+  margin-bottom: 10px;
+  display: flex;
+  color: white;
+}
+
+.inputSearch {
+  background-color: white;
+  height: 30px;
+  display: flex;
+  border-radius: 8px;
+}
+
+.inputSearch input {
+  width: 60%;
+  outline: none;
+  background-color: white;
+  font-size: 14px;
+  padding: 0 8px;
+  flex: 1;
+  border-radius: 8px;
+  border: none;
+}
+
+.iconSearch {
+  font-size: 20px;
+  background-color: #febd69;
+  width: 50px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.hot {
+  overflow: auto;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  color: white;
+}
+
+.hot a {
+  font-weight: 500;
+  padding: 4px 8px;
+}

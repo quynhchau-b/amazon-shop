@@ -1,0 +1,37 @@
+.box {
+    width: 19%;
+    min-width: 200px;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.boxContain {
+    margin: 0 1rem;
+}
+
+.title {
+    font-size: 14px;
+    text-align: center;
+    color: green;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.boxImage {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
